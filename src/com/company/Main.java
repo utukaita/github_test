@@ -14,11 +14,9 @@ public class Main {
         System.out.println(utu);
     }
     public static boolean isPrime(int n) {
-        int a = 2;
-        while ( a <= Math.sqrt(n)){
-            if (n % a == 0)
+        for ( int i = 2; i <= Math.sqrt(n); i++){
+            if (n % i == 0)
                 return false;
-            a ++;
         }
         return true;
 
